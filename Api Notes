@@ -1,0 +1,247 @@
+Post:http://localhost:8080/bridgelabz/register
+{
+    "firstName":"Sahil",
+    "lastName":"Khan",
+    "email":"sahilkhan199655@gmail.com",
+    "address":"Nagpur",
+    "dob":"11 May 1996",
+    "password":"sk123456"
+}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.aCX53eDMwvG9CYDVe6qnVjifpkVF8-3AtqVMDvKl-rQ
+{
+    "firstName":"Akshay",
+    "lastName":"Zagade",
+    "email":"akshay123@gmail.com",
+    "address":"Pune",
+    "dob":"20 Jan 1996",
+    "password":"az2tfg"
+}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.dUh9ZF0N05u-50We6PhopLWbE4bJt4uxwtCuQz3tnSc
+
+{
+    "firstName":"Bharat",
+    "lastName":"Pathak",
+    "email":"bharat@gmail.com",
+    "address":"Chandrapur",
+    "dob":"14 Feb 1996",
+    "password":"arew5z2tfg"
+}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ._ABRajEbPtmBnA-f1xA5gBSmHktUsOGk0jvvk2eOQ_U
+
+GET:http://localhost:8080/bridgelabz/getall
+GET:http://localhost:8080/bridgelabz/id/1
+GET:http://localhost:8080/bridgelabz/email/bharat@gmail.com
+
+
+PUT:http://localhost:8080/bridgelabz/update/bharat@gmail.com
+{
+    "firstName":"Samir",
+    "lastName":"Pathan",
+    "email":"sm12@gmail.com",
+    "address":"Parsheoni",
+    "dob":"20 March 1999",
+    "password":"12fdss"
+}
+
+GET:http://localhost:8080/bridgelabz/token/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.dUh9ZF0N05u-50We6PhopLWbE4bJt4uxwtCuQz3tnSc
+{
+    "message": "User data is ",
+    "data": {
+        "userId": 2,
+        "firstName": "Akshay",
+        "lastName": "Zagade",
+        "email": "akshay123@gmail.com",
+        "address": "Pune",
+        "dob": "20 Jan 1996",
+        "password": "az2tfg"
+    }
+}
+
+PUT:http://localhost:8080/bridgelabz/oldp/az2tfg/newp/akshay123
+
+PUT:http://localhost:8080/bridgelabz/email/sm12@gmail.com/newp/samir123
+
+PUT:http://localhost:8080/bridgelabz/login
+
+
+
+
+
+Book
+
+POST:http://localhost:8080/book/insertbook
+{
+    "bookName":"Gaban",
+    "autherName":"Dharamvir Bharati",
+    "bookDescription":"Comedy",
+    "bookImg":"img",
+    "price":20000.12,
+    "quantity":10
+}
+{
+    "message": "Book inserted successfully ",
+    "data": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.O4wFJ0dYbOGRpGTZFaTXMKKkvaEqAs2cZpfxCz_XcLM"
+}
+
+{
+    "bookName":"Godaan",
+    "autherName":"Munshi Premchand",
+    "bookDescription":"Story",
+    "bookImg":"img2",
+    "price":500,
+    "quantity":50
+}
+{
+    "message": "Book inserted successfully ",
+    "data": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.ud9pBkY1lIz2zOZxNm9fg0Eki9oBsEXuBho7huXrYTo"
+}
+
+{
+    "bookName":"In The Name Of Blasphemy",
+    "autherName":"Neeraj Agnihotri",
+    "bookDescription":"Fiction",
+    "bookImg":"img3",
+    "price":1000,
+    "quantity":70
+}
+{
+    "message": "Book inserted successfully ",
+    "data": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2fQ.7hkBBPOwoGm9S8JoQ_oTfWcWLSpb03hfQ_z1MCcSuYA"
+}
+
+{
+    "bookName":"Nirmala",
+    "autherName":"Munshi Premchand",
+    "bookDescription":"Horror",
+    "bookImg":"img4",
+    "price":2000,
+    "quantity":90
+}
+{
+    "message": "Book inserted successfully ",
+    "data": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3fQ.ePWdwirIfoCHNY7BOcK3_kReN7dr-JZcA-LCCB9Ke6Q"
+}
+
+
+GET:http://localhost:8080/book/getallbook
+GET:http://localhost:8080/book/get/5
+GET:http://localhost:8080/book/bookname/Nirmala
+PUT:http://localhost:8080/book/bookid/7/qty/126
+PUT:http://localhost:8080/book/bookname/Nir/qty/101
+PUT:http://localhost:8080/book/bookid/7/price/126.56
+
+
+
+
+Cart Api
+
+
+POST:http://localhost:8080/cart/add/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.aCX53eDMwvG9CYDVe6qnVjifpkVF8-3AtqVMDvKl-rQ
+{
+    "userId":1,
+    "bookId":6,
+    "quantity":102
+}
+{
+    "message": "book added successfully !",
+    "data": {
+        "cartId": 8,
+        "user": {
+            "userId": 1,
+            "firstName": "Sahil",
+            "lastName": "Khan",
+            "email": "sahilkhan199655@gmail.com",
+            "address": "Nagpur",
+            "dob": "11 May 1996",
+            "password": "sk123456"
+        },
+        "book": {
+            "bookId": 6,
+            "bookName": "In The Name Of Blasphemy",
+            "autherName": "Neeraj Agnihotri",
+            "bookDescription": "Fiction",
+            "bookImg": "img3",
+            "price": 1000.0,
+            "quantity": 70
+        },
+        "quantity": 102
+    }
+}
+
+
+
+
+{
+    "userId":1,
+    "bookId":5,
+    "quantity":158
+}
+{
+    "message": "book added successfully !",
+    "data": {
+        "cartId": 9,
+        "user": {
+            "userId": 1,
+            "firstName": "Sahil",
+            "lastName": "Khan",
+            "email": "sahilkhan199655@gmail.com",
+            "address": "Nagpur",
+            "dob": "11 May 1996",
+            "password": "sk123456"
+        },
+        "book": {
+            "bookId": 5,
+            "bookName": "Godaan",
+            "autherName": "Munshi Premchand",
+            "bookDescription": "Story",
+            "bookImg": "img2",
+            "price": 500.0,
+            "quantity": 50
+        },
+        "quantity": 158
+    }
+}
+
+
+POST:http://localhost:8080/cart/addBooks/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.aCX53eDMwvG9CYDVe6qnVjifpkVF8-3AtqVMDvKl-rQ
+[{
+    "userId":1,
+    "bookId":5,
+    "quantity":158
+},
+{
+    "userId":1,
+    "bookId":7,
+    "quantity":67
+},
+{
+    "userId":1,
+    "bookId":4,
+    "quantity":98
+}]
+
+http://localhost:8080/cart/addBooks/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.dUh9ZF0N05u-50We6PhopLWbE4bJt4uxwtCuQz3tnSc
+[{
+    "userId":1,
+    "bookId":4,
+    "quantity":18
+},
+{
+    "userId":1,
+    "bookId":5,
+    "quantity":7
+},
+{
+    "userId":1,
+    "bookId":6,
+    "quantity":8
+}]
+
+
+
+GET:http://localhost:8080/cart/all/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.dUh9ZF0N05u-50We6PhopLWbE4bJt4uxwtCuQz3tnSc
+GET:http://localhost:8080/cart/cartid/8
+GET:http://localhost:8080/cart/userid/2
+DELETE:http://localhost:8080/cart/remove/15
+PUT:http://localhost:8080/cart/cartupdate/14
+PUT:http://localhost:8080/cart/cartid/13/qty/19
